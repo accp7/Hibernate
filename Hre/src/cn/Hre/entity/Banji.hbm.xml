@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="cn.Hre.entity.Banji" table="BANJI" schema="AZ">
+        <id name="sid">
+            <column name="SID" sql-type="number(*)" precision="2147483646"/>
+        </id>
+        <property name="sname">
+            <column name="SNAME" sql-type="nvarchar2(32)" length="32" not-null="true"/>
+        </property>
+        <property name="sage">
+            <column name="SAGE" sql-type="number(*)" precision="2147483646" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>
